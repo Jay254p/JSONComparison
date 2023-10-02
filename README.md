@@ -1,6 +1,6 @@
 # JSONComparison
 
-## Introduction
+## Introduction comparing JSONL files and creating a output file with common fields 
 
 This repository contains a Python script for comparing JSONL (JSON Lines) files and generating Excel reports summarizing the differences, the data used in this project is directly from the [MASSIVE dataset]([URL](https://github.com/alexa/massive). This tool is particularly useful for analyzing multilingual data where you have a "pivot" JSONL file and want to compare it against multiple other JSONL files to identify matching data.
 
