@@ -55,5 +55,32 @@ if _name_ == "_main_":
     data_to_jsonl(sw_train, 'sw_train.jsonl')
     data_to_jsonl(sw_dev, 'sw_dev.jsonl')
     data_to_jsonl(sw_test, 'sw_test.jsonl')
+    data_to_jsonl(de_train, 'de_train.jsonl')
+    data_to_jsonl(de_dev, 'de_dev.jsonl')
+    data_to_jsonl(de_test, 'de_test.jsonl')
 
-   
+
+
+
+languages = ['en', 'sw', 'de']
+
+combined_data = []
+
+for lang in languages:
+    with jsonlines.open(f'{lang}_train.jsonl', 'r') as jsonl_file:
+        for item in jsonl_file:
+            combined_data.append({
+                'lang': lang,
+                'id': item['id'],
+                'utt': item['utt']
+            })
+print("Creating combined train data .jsonl file...")
+
+with jsonlines.open('combined_train_data.jsonl', 'w') as jsonl_file:
+    for item in combined_data:
+        jsonl_file.write(item)
+print("Creating pretty combined train data .jsonl file...")
+
+with jsonlines.open('combined_train_data_pretty.jsonl', 'w') as jsonl_file:
+    for item in combined_data:
+        jsonl_file.write(item)
