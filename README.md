@@ -37,8 +37,7 @@ Follow these steps to set up and use the JSONL File Comparison Tool:
 
 
 ### Error Logging
-If any errors occur during execution, they will be stored in the "error.log" file. 
-
+If any errors occur during execution, they will be stored in the "error.log" file, this file will be created automatically.
 
 
 
