@@ -20,7 +20,7 @@ Follow these steps to set up and use the JSONL File Comparison Tool:
    pip install jsonlines openpyxl
 
 4. clone the repository
-   '''bash
+   ```bash
    git clone https://github.com/Jay254p/JSONComparison.git
      
 ### Usage 
