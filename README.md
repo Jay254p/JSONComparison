@@ -1,7 +1,6 @@
 # JSONComparison
 
-## Introduction
-
+## Introduction comparing JSONL files and creating a output file with common fields
 This repository contains a Python script for comparing JSONL (JSON Lines) files and generating Excel reports summarizing the differences, the data used in this project is directly from the [MASSIVE dataset]([URL](https://github.com/alexa/massive). This tool is particularly useful for analyzing multilingual data where you have a "pivot" JSONL file and want to compare it against multiple other JSONL files to identify matching data.
 
 ## Getting Started
@@ -21,7 +20,7 @@ Follow these steps to set up and use the JSONL File Comparison Tool:
    pip install jsonlines openpyxl
 
 4. clone the repository
-   '''bash
+   ```bash
    git clone https://github.com/Jay254p/JSONComparison.git
      
 ### Usage 
@@ -38,8 +37,7 @@ Follow these steps to set up and use the JSONL File Comparison Tool:
 
 
 ### Error Logging
-If any errors occur during execution, they will be stored in the "error.log" file. 
-
+If any errors occur during execution, they will be stored in the "error.log" file, this file will be created automatically.
 
 
 
